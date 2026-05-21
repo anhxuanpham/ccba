@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>CCBA — Ôn tập Certification of Capability in Business Analysis</title>
+<meta name="description" content="Trang ôn tập CCBA theo BABOK Guide v3 — 6 Knowledge Areas, BACCM, Techniques, Flashcards và Quiz tương tác." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="container topbar__inner">
+    <a class="brand" href="#home">
+      <span class="brand__logo">BA</span>
+      <span class="brand__text">CCBA Study</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav__link active">Trang chủ</a>
+      <a href="#baccm" class="nav__link">BACCM</a>
+      <a href="#ka" class="nav__link">6 KAs</a>
+      <a href="#requirements" class="nav__link">Requirements</a>
+      <a href="#techniques" class="nav__link">Techniques</a>
+      <a href="#stakeholders" class="nav__link">Stakeholders</a>
+      <a href="#glossary" class="nav__link">Glossary</a>
+      <a href="#flashcards" class="nav__link">Flashcards</a>
+      <a href="#quiz" class="nav__link nav__link--cta">Quiz</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <span class="badge">BABOK Guide v3 · IIBA</span>
+        <h1>Ôn tập <span class="grad">CCBA</span> có hệ thống</h1>
+        <p class="lead">
+          Tổng hợp kiến thức CCBA (Certification of Capability in Business Analysis) theo BABOK Guide v3:
+          6 Knowledge Areas, BACCM, Techniques, Stakeholders và <b>100+ câu quiz</b> kèm giải thích.
+        </p>
+        <div class="hero__cta">
+          <a href="#quiz" class="btn btn--primary">Bắt đầu Quiz →</a>
+          <a href="#baccm" class="btn btn--ghost">Đọc lý thuyết</a>
+        </div>
+        <div class="hero__stats">
+          <div><b>3h</b><span>Thời gian thi</span></div>
+          <div><b>130</b><span>Câu hỏi</span></div>
+          <div><b>65%</b><span>Điểm đạt (~)</span></div>
+          <div><b>$325</b><span>Member fee</span></div>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="card-pillars">
+          <h3>BACCM — 6 Core Concepts</h3>
+          <div class="pillar"><span>🔄</span><div><b>Change</b><p>Sự thay đổi</p></div></div>
+          <div class="pillar"><span>🎯</span><div><b>Need</b><p>Nhu cầu</p></div></div>
+          <div class="pillar"><span>💡</span><div><b>Solution</b><p>Giải pháp</p></div></div>
+          <div class="pillar"><span>👥</span><div><b>Stakeholder</b><p>Bên liên quan</p></div></div>
+          <div class="pillar"><span>💎</span><div><b>Value</b><p>Giá trị</p></div></div>
+          <div class="pillar"><span>🌐</span><div><b>Context</b><p>Bối cảnh</p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACCM -->
+  <section id="baccm" class="section">
+    <div class="container">
+      <h2 class="section__title">BACCM — Business Analysis Core Concept Model</h2>
+      <p class="section__sub">6 core concepts — mỗi concept được định nghĩa bởi 5 concepts còn lại. Dùng để đánh giá chất lượng và tính hoàn chỉnh của công việc BA.</p>
+
+      <div class="grid-3">
+        <div class="card"><h3>🔄 Change<small>Sự thay đổi</small></h3><p>Act of transformation in response to a need. Change works to improve enterprise performance. Can be strategic, tactical, or operational.</p></div>
+        <div class="card"><h3>🎯 Need<small>Nhu cầu</small></h3><p>A problem or opportunity to be addressed. Needs can cause changes, and changes can cause needs.</p></div>
+        <div class="card"><h3>💡 Solution<small>Giải pháp</small></h3><p>A specific way of satisfying one or more needs in a context. A solution satisfies needs in the context where it is implemented.</p></div>
+        <div class="card"><h3>👥 Stakeholder<small>Bên liên quan</small></h3><p>A group or individual with a relationship to the change, the need, or the solution. Stakeholders are defined by their interest.</p></div>
+        <div class="card"><h3>💎 Value<small>Giá trị</small></h3><p>The worth, importance, or usefulness of something to a stakeholder within a context. Value can be tangible or intangible.</p></div>
+        <div class="card"><h3>🌐 Context<small>Bối cảnh</small></h3><p>The circumstances that influence, are influenced by, and provide understanding of the change. Includes attitudes, behaviors, beliefs, culture, and agreements.</p></div>
+      </div>
+
+      <div class="callout">
+        <b>💡 Key:</b> BA asks 6 questions: What changes? What needs? What solutions? Who are stakeholders? What do they value? What's the context? If any concept changes → re-evaluate all.
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 KNOWLEDGE AREAS -->
+  <section id="ka" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">6 Knowledge Areas</h2>
+      <p class="section__sub">Mỗi KA là tập hợp các tasks liên quan logic (không theo thứ tự). Tasks có thể thực hiện sequentially, iteratively, hoặc simultaneously.</p>
+
+      <div class="po-grid">
+        <div class="po-card">
+          <h3>📋 BA Planning & Monitoring</h3>
+          <p>Organize & coordinate BA efforts.</p>
+          <ul>
+            <li>Plan BA Approach (predictive vs adaptive)</li>
+            <li>Plan Stakeholder Engagement</li>
+            <li>Plan BA Governance</li>
+            <li>Plan BA Information Management</li>
+            <li>Identify BA Performance Improvements</li>
+          </ul>
+        </div>
+
+        <div class="po-card">
+          <h3>🗣 Elicitation & Collaboration</h3>
+          <p>Prepare, conduct elicitation & confirm results.</p>
+          <ul>
+            <li>Prepare for Elicitation</li>
+            <li>Conduct Elicitation</li>
+            <li>Confirm Elicitation Results</li>
+            <li>Communicate BA Information</li>
+            <li>Manage Stakeholder Collaboration</li>
+          </ul>
+        </div>
+
+        <div class="po-card">
+          <h3>🔄 Requirements Life Cycle Management</h3>
+          <p>Manage requirements from inception to retirement.</p>
+          <ul>
+            <li>Trace Requirements</li>
+            <li>Maintain Requirements</li>
+            <li>Prioritize Requirements</li>
+            <li>Assess Requirements Changes</li>
+            <li>Approve Requirements</li>
+          </ul>
+        </div>
+
+        <div class="po-card">
+          <h3>🎯 Strategy Analysis</h3>
+          <p>Identify business need, define change strategy.</p>
+          <ul>
+            <li>Analyze Current State</li>
+            <li>Define Future State</li>
+            <li>Assess Risks</li>
+            <li>Define Change Strategy</li>
+          </ul>
+        </div>
+
+        <div class="po-card">
+          <h3>📐 Requirements Analysis & Design Definition</h3>
+          <p>Structure, model, validate requirements & designs.</p>
+          <ul>
+            <li>Specify and Model Requirements</li>
+            <li>Verify Requirements</li>
+            <li>Validate Requirements</li>
+            <li>Define Requirements Architecture</li>
+            <li>Define Design Options</li>
+            <li>Analyze Potential Value & Recommend Solution</li>
+          </ul>
+        </div>
+
+        <div class="po-card">
+          <h3>📊 Solution Evaluation</h3>
+          <p>Assess performance & value of solution in use.</p>
+          <ul>
+            <li>Measure Solution Performance</li>
+            <li>Analyze Performance Measures</li>
+            <li>Assess Solution Limitations</li>
+            <li>Assess Enterprise Limitations</li>
+            <li>Recommend Actions to Increase Solution Value</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REQUIREMENTS -->
+  <section id="requirements" class="section">
+    <div class="container">
+      <h2 class="section__title">Requirements Classification Schema</h2>
+      <p class="section__sub">4 loại requirements + distinction giữa Requirements vs Designs.</p>
+
+      <div class="grid-3">
+        <div class="art-card">
+          <div class="art-card__head">🏢 Business Requirements</div>
+          <p>Goals, objectives, outcomes mô tả <b>WHY</b> a change is initiated. Apply to whole enterprise, business area, or initiative.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-card__head">👥 Stakeholder Requirements</div>
+          <p>Needs of stakeholders that must be met to achieve business requirements. Bridge giữa business & solution requirements.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-card__head">⚙️ Solution Requirements</div>
+          <p>Capabilities & qualities of solution. Chia thành:<br/>• <b>Functional</b> — behavior & information<br/>• <b>Non-functional</b> (QoS) — conditions, qualities</p>
+        </div>
+      </div>
+
+      <div class="grid-3" style="margin-top:18px;">
+        <div class="art-card">
+          <div class="art-card__head">🔀 Transition Requirements</div>
+          <p>Capabilities for transition from current → future state. <b>Temporary</b> — not needed once change complete. E.g.: data conversion, training, business continuity.</p>
+        </div>
+        <div class="art-card">
+          <div class="art-card__head">📋 Requirement vs Design</div>
+          <p><b>Requirement</b> = usable representation of a NEED (what value if fulfilled).<br/><b>Design</b> = usable representation of a SOLUTION (how value realized if built).<br/>BA continuously asks "why?"</p>
+        </div>
+        <div class="art-card">
+          <div class="art-card__head">🔑 Key Distinction</div>
+          <p>Requirements focus on <b>need</b>. Designs focus on <b>solution</b>. Same techniques used for both. A requirement leads to a design which may drive more requirements.</p>
+        </div>
+      </div>
+
+      <div class="callout">
+        <b>💡 Verify vs Validate:</b> <b>Verify</b> = built correctly (meets specs/standards). <b>Validate</b> = built the right thing (delivers value, meets business need).
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNIQUES -->
+  <section id="techniques" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Techniques chính</h2>
+      <p class="section__sub">BABOK v3 có 50 techniques. Dưới đây là những technique quan trọng nhất cho CCBA.</p>
+
+      <div class="po-grid">
+        <div class="po-card"><h3>🗣 Elicitation</h3><ul><li>Brainstorming</li><li>Interviews</li><li>Workshops</li><li>Observation</li><li>Surveys/Questionnaires</li><li>Document Analysis</li><li>Focus Groups</li><li>Prototyping</li></ul></div>
+        <div class="po-card"><h3>📊 Modeling</h3><ul><li>Process Modelling (BPMN)</li><li>Use Case Diagrams</li><li>Data Flow Diagrams</li><li>Entity Relationship Diagrams</li><li>State Diagrams</li><li>Sequence Diagrams</li><li>Data Modelling</li></ul></div>
+        <div class="po-card"><h3>📈 Analysis</h3><ul><li>SWOT Analysis</li><li>Root Cause Analysis (Fishbone)</li><li>Risk Analysis & Management</li><li>Decision Analysis</li><li>Financial Analysis (ROI, NPV, IRR, Payback)</li><li>MoSCoW Prioritization</li><li>Estimation</li></ul></div>
+        <div class="po-card"><h3>📋 Documentation</h3><ul><li>User Stories + Acceptance Criteria</li><li>Business Rules Analysis</li><li>Acceptance & Evaluation Criteria</li><li>Data Dictionary</li><li>Glossary</li><li>Non-Functional Requirements</li></ul></div>
+        <div class="po-card"><h3>👥 Stakeholder</h3><ul><li>Stakeholder List, Map, Personas</li><li>RACI Matrix</li><li>Organizational Modelling</li><li>Mind Mapping</li><li>Balanced Scorecard</li><li>Business Model Canvas</li></ul></div>
+        <div class="po-card"><h3>🔍 Validation</h3><ul><li>Reviews (walkthroughs, inspections)</li><li>Acceptance Criteria</li><li>Traceability Matrix</li><li>Item Tracking</li><li>Metrics & KPIs</li><li>Benchmarking</li></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STAKEHOLDERS -->
+  <section id="stakeholders" class="section">
+    <div class="container">
+      <h2 class="section__title">Stakeholders trong BABOK</h2>
+      <p class="section__sub">11 generic stakeholder roles theo BABOK v3.</p>
+
+      <div class="po-grid">
+        <div class="po-card"><h3>👤 Business Analyst</h3><p>Responsible & accountable for BA activities. May perform other stakeholder roles.</p></div>
+        <div class="po-card"><h3>🛒 Customer</h3><p>Uses/may use products or services. Has contractual or moral rights.</p></div>
+        <div class="po-card"><h3>🧠 Domain SME</h3><p>In-depth knowledge of topic relevant to business need or solution scope.</p></div>
+        <div class="po-card"><h3>🖥 End User</h3><p>Directly interacts with the solution. All participants in business process.</p></div>
+        <div class="po-card"><h3>🔧 Implementation SME</h3><p>Specialized knowledge regarding implementation (architect, developer, DBA, trainer...).</p></div>
+        <div class="po-card"><h3>⚙️ Operational Support</h3><p>Day-to-day management & maintenance of system/product.</p></div>
+        <div class="po-card"><h3>📊 Project Manager</h3><p>Manages work to deliver solution. Balances scope, budget, schedule, quality, risk.</p></div>
+        <div class="po-card"><h3>⚖️ Regulator</h3><p>Defines & enforces standards (legislation, governance, audit).</p></div>
+        <div class="po-card"><h3>💰 Sponsor</h3><p>Initiates effort, authorizes work, controls budget & scope.</p></div>
+        <div class="po-card"><h3>🏭 Supplier</h3><p>External — provides products/services. Has contractual obligations.</p></div>
+        <div class="po-card"><h3>✅ Tester</h3><p>Determines how to verify solution meets requirements. Ensures quality standards.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOSSARY -->
+  <section id="glossary" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Glossary — Thuật ngữ BABOK</h2>
+      <input type="search" id="glossarySearch" class="search" placeholder="🔎 Tìm thuật ngữ..." />
+      <div id="glossaryList" class="glossary"></div>
+    </div>
+  </section>
+
+  <!-- FLASHCARDS -->
+  <section id="flashcards" class="section">
+    <div class="container">
+      <h2 class="section__title">Flashcards</h2>
+      <p class="section__sub">Click vào thẻ để lật. Dùng phím ← → để chuyển thẻ.</p>
+      <div class="flash-wrap">
+        <div class="flashcard" id="flashcard">
+          <div class="flashcard__inner">
+            <div class="flashcard__face flashcard__front"><div class="flash-q" id="flashFront"></div><div class="flash-hint">Click để lật</div></div>
+            <div class="flashcard__face flashcard__back"><div class="flash-a" id="flashBack"></div></div>
+          </div>
+        </div>
+        <div class="flash-controls">
+          <button class="btn btn--ghost" id="flashPrev">← Trước</button>
+          <span id="flashCounter" class="flash-counter">1 / 1</span>
+          <button class="btn btn--ghost" id="flashNext">Tiếp →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Quiz luyện thi CCBA</h2>
+      <p class="section__sub">100+ câu hỏi theo BABOK v3, có giải thích đáp án.</p>
+      <div id="quizStart" class="quiz-start">
+        <h3>Chọn chế độ ôn tập</h3>
+        <div class="quiz-modes">
+          <label><input type="radio" name="qmode" value="10" /><span>10 câu nhanh</span></label>
+          <label><input type="radio" name="qmode" value="20" checked /><span>20 câu</span></label>
+          <label><input type="radio" name="qmode" value="40" /><span>40 câu</span></label>
+          <label><input type="radio" name="qmode" value="80" /><span>80 câu</span></label>
+          <label><input type="radio" name="qmode" value="all" /><span>Tất cả câu hỏi</span></label>
+        </div>
+        <div class="quiz-options">
+          <label><input type="checkbox" id="quizShuffle" checked />Trộn câu & đáp án</label>
+          <label><input type="checkbox" id="quizInstant" checked />Hiện đáp án ngay sau mỗi câu</label>
+        </div>
+        <button class="btn btn--primary" id="quizStartBtn">🚀 Bắt đầu</button>
+      </div>
+      <div id="quizPlay" class="quiz-play hidden">
+        <div class="quiz-bar"><div class="quiz-bar__progress"><div id="quizProgress" class="quiz-bar__fill"></div></div><div class="quiz-bar__meta"><span id="quizCounter">Câu 1/20</span><span id="quizScore">Đúng: 0</span></div></div>
+        <div id="quizQ" class="quiz-q"></div>
+        <div id="quizOpts" class="quiz-opts"></div>
+        <div id="quizExplain" class="quiz-explain hidden"></div>
+        <div class="quiz-actions"><button class="btn btn--ghost" id="quizMark">🚩 Đánh dấu</button><button class="btn btn--primary" id="quizNext" disabled>Câu tiếp →</button></div>
+      </div>
+      <div id="quizResult" class="quiz-result hidden">
+        <div class="quiz-result__score"><div class="ring" id="quizRing"><span id="quizPercent">0%</span></div><div><h3 id="quizVerdict">Kết quả</h3><p id="quizSummary"></p></div></div>
+        <div class="quiz-result__actions"><button class="btn btn--primary" id="quizReview">📖 Xem lại câu sai</button><button class="btn btn--ghost" id="quizRestart">🔄 Làm lại</button></div>
+        <div id="quizReviewList" class="quiz-review hidden"></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <p>© CCBA Study · Nội dung dựa trên <a href="https://www.iiba.org/babok-guide/" target="_blank" rel="noopener">BABOK Guide v3</a> của IIBA.</p>
+    <p class="footer__small">Được tạo bởi William</p>
+  </div>
+</footer>
+
+<script src="js/data/glossary.js"></script>
+<script src="js/data/flashcards.js"></script>
+<script src="js/data/quiz-data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
+</body>
+</html>
