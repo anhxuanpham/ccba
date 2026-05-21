@@ -297,13 +297,21 @@
           <label><input type="radio" name="qmode" value="all" /><span>Tất cả câu hỏi</span></label>
         </div>
         <div class="quiz-options">
-          <label><input type="checkbox" id="quizShuffle" checked />Trộn câu & đáp án</label>
+          <label><input type="checkbox" id="quizShuffle" checked />Trộn thứ tự câu hỏi</label>
           <label><input type="checkbox" id="quizInstant" checked />Hiện đáp án ngay sau mỗi câu</label>
+          <label><input type="checkbox" id="quizTimer" />⏱ Bật timer (45s/câu)</label>
         </div>
         <button class="btn btn--primary" id="quizStartBtn">🚀 Bắt đầu</button>
       </div>
       <div id="quizPlay" class="quiz-play hidden">
-        <div class="quiz-bar"><div class="quiz-bar__progress"><div id="quizProgress" class="quiz-bar__fill"></div></div><div class="quiz-bar__meta"><span id="quizCounter">Câu 1/20</span><span id="quizScore">Đúng: 0</span></div></div>
+        <div class="quiz-bar">
+          <div class="quiz-bar__progress"><div id="quizProgress" class="quiz-bar__fill"></div></div>
+          <div class="quiz-bar__meta">
+            <span id="quizCounter">Câu 1/20</span>
+            <span id="quizTimer_display" class="hidden">⏱ 0:00</span>
+            <span id="quizScore">Đúng: 0</span>
+          </div>
+        </div>
         <div id="quizQ" class="quiz-q"></div>
         <div id="quizOpts" class="quiz-opts"></div>
         <div id="quizExplain" class="quiz-explain hidden"></div>
@@ -328,6 +336,7 @@
 <script src="js/data/glossary.js"></script>
 <script src="js/data/flashcards.js"></script>
 <script src="js/data/quiz-data.js"></script>
+<script>window.QUIZ_PASS_THRESHOLD = 65; window.QUIZ_EXAM_NAME = 'CCBA';</script>
 <script src="js/main.js"></script>
 <script src="js/quiz.js"></script>
 </body>
