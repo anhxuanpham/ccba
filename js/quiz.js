@@ -151,13 +151,13 @@
 
     const total = questions.length;
     const pct = Math.round((score / total) * 100);
-    const pass = pct >= 85;
+    const pass = pct >= 65;
 
     document.getElementById('quizRing').style.setProperty('--p', `${pct}%`);
     document.getElementById('quizPercent').textContent = `${pct}%`;
     document.getElementById('quizVerdict').textContent = pass ? '🎉 Đạt! PASS' : '📚 Chưa đạt — cần ôn thêm';
     document.getElementById('quizVerdict').style.color = pass ? 'var(--good)' : 'var(--warn)';
-    document.getElementById('quizSummary').textContent = `${score}/${total} câu đúng · ${total - score} câu sai · Cần ≥ 85% để pass PSPO I`;
+    document.getElementById('quizSummary').textContent = `${score}/${total} câu đúng · ${total - score} câu sai · Cần ≥ 65% để pass CCBA`;
 
     document.getElementById('quizReviewList').classList.add('hidden');
   }
